@@ -1,0 +1,83 @@
+show databases ;
+use movies_collection;
+show tables;
+
+-- insertiEditorIDng the values in existing table
+INSERT INTO ACTORS 
+VALUES (21,"GARNACHO","TELAVIE","1993-04-23"),
+		(01,"LULAZ","BONEY","2000-01-01"),
+		(56,"KENT","JOFFERY","2006-8-10"),
+		(90,"NEWTON ","ISAK","1993-01-13"),
+		(11,"TOM","ROCK","2001-11-21");
+
+
+INSERT INTO EDITOR
+VALUES (001,"SAMUEL","SHUMI","091006...."),
+       (002,"HABTAMU","TADESE","094576...."),
+       (003,"DAGIM","BEKELE","091656...."),
+       (004,"NATINAEL","BRUK","091896...."),
+       (005,"MUSA","JEMAL","091165....");
+            
+INSERT INTO DIRECTORS
+VALUES (101,"SAMUEL","NEGESE","091006....","ETHIOPIA"),
+       (102,"BRATTIAN","STANNIS","024576....","ENGLAND"),
+       (103,"ZECHIPING ","YOUNG","031656....","CHINA"),
+       (104,"MICHEAL","ERICKSON","011896....","USA"),
+       (105,"MUFAS","ODAGU","091165....","ETIOPIA");
+       
+ INSERT INTO STUDIOS
+ VALUES (200,"A2M PRODUCTION","ADDIS ABABA"),
+         (201,"NEFLIM","KERGISTAN"),
+         (202,"FIREFOX","FLORIDA"),
+         (203,"AUTOSTUDIO","FLORIDA"),
+         (204,"WASEGARECORDS","ADDIS ABABA");
+         
+INSERT INTO GENRES 
+ VALUES (300,"COMEDY"),
+         (301,"FICTION"),
+         (302,"ADVENTURE"),
+         (303,"ACTION"),
+         (304,"ADVENTURE");
+INSERT INTO movies
+VALUES (400,"TIMBER THE WOLF","1990",303,105,"2:35:31","*****",003),
+       (401,"THE CHRONICLES","1930",300 ,101,"1:55:47","***",001),
+       (402,"CYBER CRACKER","2001",301,102,"2:35:01","**",002),
+       (403,"GAME ZONE","2005",302,104,"3:01:31","*****",005),
+       (404,"INSTALLER","1960",304,103,"2:56:21","****",004);
+
+INSERT INTO MOVIEACTORS (movieactorID,ROLE) 
+VALUES (500,"TO ACT LIKE CYBER SECURITY"),
+       (501,"ACT LIKE PROTECTOR"),
+       (502,"UNKNOWN"),
+       (503,"FASTEST RUNNER"),
+       (504,"TO ACT LIKE CYBER SECURITY");     
+ 
+ INSERT INTO PRODUCER
+ VALUES (600,402,"NIGATU","DAGNE","nigatu@gmail.com","AYERTENA"),
+         (601,401,"DARVISH","ERDOHAN","darvish@gmail.com","stanbul"),
+         (602,400,"NIKOLA","KARDATE","NIKO@gmail.com","AMSTERDAM"),
+         (603,404,"HABTAMU","DEGAFE","HABTAMu@gmail.com","MEXICO"),
+         (604,403,"MEKONIN","DAGNE","moke@gmail.com","AYErtena");
+INSERT INTO MOVIESTUDIOS
+VALUES (700,404,204),
+        (701,402,202),
+        (702,403,201),
+        (703,400,200),
+        (705,401,203);
+
+INSERT INTO SOUNDTRACKS 
+VALUES (800,404,"HEART_SOFTING","UNKNOWN","1:02:00"),
+       (801,402,"GAMING_MUSIC","UNKNOWN","00:30:00"),
+       (802,401,"NATURAL_HEAT","UNKNOWN","2:00:00"),
+       (803,403,"THE RAPPED BOY","UNKNOWN","3:02:00"),
+       (804,400,"LYRICSCOLLECTION","UNKNOWN","2:32:00");
+
+INSERT INTO AUTHORS
+VALUES (900,"LEONARDO","COVIN",403),
+       (901,"JOHN","KAEVEN",401),
+       (902,"LOLAZ","FRERICK",402),
+       (903,"ERICK","JOSEF",404),
+       (904,"MICHEAL","BRANDON",400);
+
+SELECT * FROM AUTHORS;
+
